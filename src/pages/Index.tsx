@@ -569,6 +569,20 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Floating Quick Help Button */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <Button 
+          size="lg" 
+          className="rounded-full h-16 w-16 hero-gradient shadow-xl hover:shadow-2xl transition-natural animate-pulse-gentle"
+          onClick={() => {
+            // Simulate emergency help action
+            alert(language === 'en' ? 'Emergency agricultural support activated! Call +91-1800-KRISHI for immediate assistance.' : 'आपातकालीन कृषि सहायता सक्रिय! तत्काल सहायता के लिए +91-1800-KRISHI पर कॉल करें।');
+          }}
+        >
+          <Phone className="h-8 w-8 text-white" />
+        </Button>
+      </div>
+
       {/* Footer */}
       <footer className="bg-foreground text-background py-12 px-4">
         <div className="container mx-auto text-center">
